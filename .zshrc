@@ -35,13 +35,11 @@ zinit light zsh-users/zsh-autosuggestions
 # zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jeffreytse/zsh-vi-mode
-zinit light jeffreytse/zsh-vi-mode
 
 #### SNIPPETS ####  
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::aws
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
@@ -56,17 +54,17 @@ zinit cdreplay -q
 
 export EZA_ICONS_AUTO=always
 
-# Keybindings
-bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
-bindkey '^[w' kill-region
+# Keybindings — applied after zsh-vi-mode initializes to avoid being overridden
+zvm_after_init() {
+  bindkey '^p' history-search-backward
+  bindkey '^n' history-search-forward
+  bindkey '^[w' kill-region
+}
 
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
-HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
