@@ -29,10 +29,9 @@ fpath+=~/.zfunc
 fpath=(/Users/user/.docker/completions $fpath)
 
 #### PLUGINS ####
-zinit light marlonrichert/zsh-autocomplete
+zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
-# zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jeffreytse/zsh-vi-mode
 
