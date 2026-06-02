@@ -1,18 +1,18 @@
 # This is the configuration file for Ghostty.
 
 ## Theme 
-theme = "Catppuccin Mocha"
-background = "#121212"
+theme = "Gruvbox Material Dark"
+# background = "#2c2c2c"
 
 ## Font
-font-family = "JetBrains Mono"
-font-size=16
+font-family = "Monospace Neon Medium"
+font-size=18
 # font-thicken = true 
 
 ## Appearance
-background-opacity = 0.85
-background-blur = 60 
-adjust-cell-height = 2
+# background-opacity = 0.90
+# background-blur = 60 
+# adjust-cell-height = 2
 
 
 ## macOS
