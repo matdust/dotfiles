@@ -55,14 +55,13 @@ return {
 		name = "tokyonight",
 		opts = {
 			style = "moon",
-			transparent = true,
 			styles = {
 				comments = { italic = true },
 				keywords = { italic = false },
 				functions = {},
 				variables = {},
-				sidebars = "transparent",
-				floats = "transparent",
+				-- sidebars = "transparent",
+				-- floats = "transparent",
 			},
 		},
 	},
@@ -72,14 +71,24 @@ return {
 		opts = {
 			variant = "moon",
 			styles = {
-				transparency = true,
+				italic = false,
 			},
 		},
 	},
 	{
+		"sainnhe/gruvbox-material",
+		name = "gruvbox-material",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.g.gruvbox_material_background = "medium"
+			vim.g.gruvbox_material_better_performance = 1
+		end,
+	},
+	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "catppuccin",
+			colorscheme = "gruvbox-material",
 		},
 	},
 }
