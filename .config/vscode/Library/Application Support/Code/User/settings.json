@@ -170,10 +170,9 @@
         // Subtle depth so overlays stand out
         "widget.shadow": "#00000088"
     } */
-    "editor.fontFamily": "Monaspace Neon Medium",
+    "editor.fontFamily": "JetBrains Mono",
     "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "Tokyo Night Storm Frameless",
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.semanticHighlighting.enabled": true,
     "editor.inlayHints.enabled": "on",
     "terminal.integrated.minimumContrastRatio": 1,
@@ -228,8 +227,8 @@
     "workbench.activityBar.location": "bottom",
     "custom-ui-style.electron": {
         "frame": false,
-        "transparent": false,
-        // "opacity": 0.95
+        "transparent": true,
+        "opacity": 0.95
     },
     "git.mergeEditor": true,
     "diffEditor.experimental.showMoves": true,
@@ -251,19 +250,13 @@
     "editor.minimap.enabled": false,
     "debug.console.fontSize": 16,
     "terminal.integrated.fontSize": 16,
-    "binocular.command.commands": [
-        {
-            "shellCommand": "git checkout $(git fuzzy log)",
-            "commandIdentifier": "Git fuzzy log"
-        },
-        {
-            "shellCommand": "git checkout $(git fuzzy log ${file})",
-            "commandIdentifier": "Git fuzzy log current file"
-        }
-    ],
     "gitlens.advanced.externalDiffTool": "difft",
     "gitlens.advanced.externalDiffToolArgs": [
         "$LOCAL",
         "$REMOTE"
-    ]
+    ],
+    "maui.configuration.javaSdkPreferredPath": "/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home",
+    // "diffEditor.ignoreTrimWhitespace": true,
+    "git.addAICoAuthor": "off",
+    "workbench.colorTheme": "Rosé Pine Moon (no italics)"
 }
