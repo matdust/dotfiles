@@ -259,3 +259,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-name-regex-substring = 'GitButler'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.window-title-regex-substring = 'Bevy'
+run = 'layout floating'
