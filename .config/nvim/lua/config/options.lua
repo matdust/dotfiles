@@ -2,6 +2,8 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.g.lazyvim_picker = "fzf" -- use fzf-lua as the picker instead of snacks/telescope
+
 vim.opt.number = true -- show the absolute number on the current line
 vim.opt.relativenumber = true -- ...and relative numbers everywhere else
 

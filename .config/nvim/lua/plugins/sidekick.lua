@@ -9,7 +9,7 @@ return {
 					height = 0.8,
 				},
 				keys = {
-					hide_esc = { "<esc><esc>", "hide", mode = "t", desc = "hide the terminal window" },
+					hide_esc = { "qq", "hide", mode = "t", desc = "hide the terminal window" },
 				},
 			},
 		},
