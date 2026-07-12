@@ -5,7 +5,7 @@ theme = "Gruvbox Material Dark"
 # background = "#2c2c2c"
 
 ## Font
-font-family = "Monospace Neon Medium"
+font-family = "JetBrains Mono Regular"
 font-size=18
 # font-thicken = true 
 
