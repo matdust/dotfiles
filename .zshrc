@@ -88,10 +88,6 @@ alias vim='nvim'
 alias lsa="eza -a"
 alias ls="eza"
 
-# Shell integrations
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-
 # Yazi config
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -100,3 +96,7 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+
+# Shell integrations (zoxide must stay last, see `zoxide doctor`)
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
