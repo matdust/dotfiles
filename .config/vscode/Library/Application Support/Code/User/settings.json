@@ -1,72 +1,72 @@
 {
-    "window.newWindowProfile": "Default",
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "omnisharp.enableEditorConfigSupport": true,
-    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
-    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "openFiles",
-    "workbench.startupEditor": "none",
-    "rust-analyzer.check.command": "clippy",
-    "[rust]": {
-        "editor.formatOnSave": true,
-        "editor.inlayHints.enabled": "on",
-        "editor.parameterHints.enabled": true,
-    },
-    "go.useLanguageServer": true,
-    "gopls": {
-        "ui.semanticTokens": true,
-        "hoverKind": "FullDocumentation",
-        "completeFunctionCalls": true,
-        "usePlaceholders": true,
-        "deepCompletion": true,
-        "matcher": "fuzzy"
-    },
-    "editor.minimap.autohide": "mouseover",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "rust": false,
-        "csharp": true,
-        "go": true
-    },
-    "editor.hover.delay": 120,
-    "editor.hover.sticky": true,
-    "editor.parameterHints.cycle": true,
-    "editor.suggest.preview": true,
-    "editor.suggest.showInlineDetails": true,
-    "editor.hover.enabled": "on",
+  "window.newWindowProfile": "Default",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "omnisharp.enableEditorConfigSupport": true,
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "openFiles",
+  "workbench.startupEditor": "none",
+  "rust-analyzer.check.command": "clippy",
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.inlayHints.enabled": "on",
     "editor.parameterHints.enabled": true,
-    "editor.suggest.showStatusBar": true,
-    "editor.inlineSuggest.showToolbar": "always",
-    "editor.suggest.showMethods": true,
-    "editor.suggest.showFunctions": true,
-    "editor.suggest.showDetails": true,
-    "editor.quickSuggestions": {
-        "strings": true,
-        "comments": true,
-        "other": true
-    },
-    "editor.lineNumbers": "relative",
-    "editor.cursorSurroundingLines": 8,
-    // To improve performance
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    // UI Customization
-    // "workbench.colorCustomizations": {
-    //     "editorInlayHint.background": "#00000080",
-    //     "editor.inlineValuesBackground": "#00000080",
-    //     "editorInlayHint.parameterBackground": "#00000080",
-    //     "editorInlayHint.typeBackground": "#00000080",
-    // },
-    /*     "workbench.colorCustomizations": {
+  },
+  "go.useLanguageServer": true,
+  "gopls": {
+    "ui.semanticTokens": true,
+    "hoverKind": "FullDocumentation",
+    "completeFunctionCalls": true,
+    "usePlaceholders": true,
+    "deepCompletion": true,
+    "matcher": "fuzzy"
+  },
+  "editor.minimap.autohide": "mouseover",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "rust": false,
+    "csharp": true,
+    "go": true
+  },
+  "editor.hover.delay": 120,
+  "editor.hover.sticky": true,
+  "editor.parameterHints.cycle": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.hover.enabled": "on",
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.inlineSuggest.showToolbar": "always",
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showDetails": true,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+    "other": true
+  },
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // UI Customization
+  // "workbench.colorCustomizations": {
+  //     "editorInlayHint.background": "#00000080",
+  //     "editor.inlineValuesBackground": "#00000080",
+  //     "editorInlayHint.parameterBackground": "#00000080",
+  //     "editorInlayHint.typeBackground": "#00000080",
+  // },
+  /*     "workbench.colorCustomizations": {
         // Core shells
         "editor.background": "#0A0A0B",
         "sideBar.background": "#0A0A0B",
@@ -170,93 +170,116 @@
         // Subtle depth so overlays stand out
         "widget.shadow": "#00000088"
     } */
-    "editor.fontFamily": "JetBrains Mono",
-    "workbench.iconTheme": "catppuccin-mocha",
-    "editor.fontSize": 18,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.inlayHints.enabled": "on",
-    "terminal.integrated.minimumContrastRatio": 1,
-    "window.titleBarStyle": "custom",
-    // "catppuccin.workbenchMode": "minimal",
-    "catppuccin.colorOverrides": {
-        "mocha": {
-            "base": "#0A0A0B",
-            "mantle": "#0A0A0B",
-            "crust": "#0A0A0B",
-        },
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 18,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.inlayHints.enabled": "on",
+  "terminal.integrated.minimumContrastRatio": 1,
+  "window.titleBarStyle": "custom",
+  // "catppuccin.workbenchMode": "minimal",
+  "catppuccin.colorOverrides": {
+    "mocha": {
+      "base": "#0A0A0B",
+      "mantle": "#0A0A0B",
+      "crust": "#0A0A0B",
     },
-    // use your accent (pink) on the statusBar as well
-    "catppuccin.italicKeywords": false,
-    "catppuccin.accentColor": "mauve",
-    "catppuccin.customUIColors": {
-        "all": {
-            "breadcrumb.background": "base",
-            "breadcrumb.foreground": "accent",
-        },
-        "mocha": {
-            "statusBar.foreground": "accent",
-        },
+  },
+  // use your accent (pink) on the statusBar as well
+  "catppuccin.italicKeywords": false,
+  "catppuccin.accentColor": "mauve",
+  "catppuccin.customUIColors": {
+    "all": {
+      "breadcrumb.background": "base",
+      "breadcrumb.foreground": "accent",
     },
-    "editor.definitionLinkOpensInPeek": true,
-    "editor.experimentalGpuAcceleration": "on",
-    "catppuccin.boldKeywords": false,
-    "editor.fontWeight": "100",
-    "csharp.inlayHints.enableInlayHintsForTypes": true,
-    "dotnet.inlayHints.enableInlayHintsForParameters": true,
-    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
-    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
-    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
-    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
-    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
-    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
-    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
-    "go.inlayHints.assignVariableTypes": true,
-    "go.inlayHints.constantValues": true,
-    "go.inlayHints.functionTypeParameters": true,
-    "go.inlayHints.parameterNames": true,
-    "go.inlayHints.rangeVariableTypes": true,
-    "go.inlayHints.compositeLiteralTypes": true,
-    "go.inlayHints.compositeLiteralFields": true,
-    "editor.inlayHints.padding": true,
-    "editor.formatOnSave": true,
-    "window.confirmBeforeClose": "always",
-    "window.dialogStyle": "custom",
-    "search.searchView.keywordSuggestions": true,
-    "search.showLineNumbers": true,
-    "search.smartCase": true,
-    "workbench.activityBar.location": "bottom",
-    "custom-ui-style.electron": {
-        "frame": false,
-        "transparent": true,
-        "opacity": 0.95
+    "mocha": {
+      "statusBar.foreground": "accent",
     },
-    "git.mergeEditor": true,
-    "diffEditor.experimental.showMoves": true,
-    "catppuccin.bracketMode": "neovim",
-    "[aspnetcorerazor]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.experimentalGpuAcceleration": "on",
+  "catppuccin.boldKeywords": false,
+  "editor.fontWeight": "10",
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+  "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+  "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  "go.inlayHints.compositeLiteralTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "editor.inlayHints.padding": true,
+  "editor.formatOnSave": true,
+  "window.confirmBeforeClose": "always",
+  "window.dialogStyle": "custom",
+  "search.searchView.keywordSuggestions": true,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "workbench.activityBar.location": "bottom",
+  "custom-ui-style.electron": {
+    "frame": false,
+    // "transparent": true,
+    // "opacity": 0.95
+  },
+  "git.mergeEditor": true,
+  "diffEditor.experimental.showMoves": true,
+  "catppuccin.bracketMode": "neovim",
+  "[aspnetcorerazor]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "editor.aiStats.enabled": true,
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+  "jdk.telemetry.enabled": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "playwright.reuseBrowser": false,
+  "editor.minimap.enabled": false,
+  "debug.console.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+  "gitlens.advanced.externalDiffTool": "difft",
+  "gitlens.advanced.externalDiffToolArgs": [
+    "$LOCAL",
+    "$REMOTE"
+  ],
+  "maui.configuration.javaSdkPreferredPath": "/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home",
+  // "diffEditor.ignoreTrimWhitespace": true,
+  "git.addAICoAuthor": "off",
+  // Neovim Configuration for LazyVim-like navigation
+  "vscode-neovim.enable": true,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.useWSL": false,
+  // Escape insert mode with `jk` (and `jj`), LazyVim-style
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape"
     },
-    "editor.aiStats.enabled": true,
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "[java]": {
-        "editor.defaultFormatter": "Oracle.oracle-java"
-    },
-    "jdk.telemetry.enabled": false,
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
-    },
-    "playwright.reuseBrowser": false,
-    "editor.minimap.enabled": false,
-    "debug.console.fontSize": 16,
-    "terminal.integrated.fontSize": 16,
-    "gitlens.advanced.externalDiffTool": "difft",
-    "gitlens.advanced.externalDiffToolArgs": [
-        "$LOCAL",
-        "$REMOTE"
-    ],
-    "maui.configuration.javaSdkPreferredPath": "/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home",
-    // "diffEditor.ignoreTrimWhitespace": true,
-    "git.addAICoAuthor": "off",
-    "workbench.colorTheme": "Rosé Pine Moon (no italics)"
+    "jj": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  "extensions.ignoreRecommendations": true,
+  // Editor settings for better vim integration
+  "editor.scrollBeyondLastLine": false,
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.settings.alwaysShowAdvancedSettings": true,
+  "workbench.browser.searchEngine": "google",
+  "telemetry.feedback.enabled": false,
+  "telemetry.editStats.enabled": false,
+  "claudeCode.initialPermissionMode": "manual",
+  "claudeCode.useCtrlEnterToSend": true,
+  "claudeCode.useTerminal": true,
+  "gruvbox-ish.recommendRubyGrammar": false,
+  "gruvboxMaterial.darkContrast": "soft",
+  "workbench.colorTheme": "Ayu Mirage",
 }
