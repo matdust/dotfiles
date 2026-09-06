@@ -26,7 +26,6 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "rust": false,
     "csharp": true,
     "go": true
   },
@@ -172,6 +171,7 @@
     } */
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 18,
+  "editor.lineHeight": 1.6,
   "editor.semanticHighlighting.enabled": true,
   "editor.inlayHints.enabled": "on",
   "terminal.integrated.minimumContrastRatio": 1,
@@ -197,7 +197,7 @@
     },
   },
   "editor.definitionLinkOpensInPeek": true,
-  "editor.experimentalGpuAcceleration": "on",
+  "editor.experimentalGpuAcceleration": "off",
   "catppuccin.boldKeywords": false,
   "editor.fontWeight": "10",
   "csharp.inlayHints.enableInlayHintsForTypes": true,
@@ -229,6 +229,12 @@
     // "transparent": true,
     // "opacity": 0.95
   },
+  "custom-ui-style.stylesheet": {
+    ".monaco-editor, .monaco-workbench, .xterm": {
+      // "-webkit-font-smoothing": "subpixel-antialiased !important",
+      "text-rendering": "optimizeLegibility !important"
+    }
+  },
   "git.mergeEditor": true,
   "diffEditor.experimental.showMoves": true,
   "catppuccin.bracketMode": "neovim",
@@ -259,7 +265,6 @@
   "vscode-neovim.enable": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "vscode-neovim.useWSL": false,
-  // Escape insert mode with `jk` (and `jj`), LazyVim-style
   "vscode-neovim.compositeKeys": {
     "jk": {
       "command": "vscode-neovim.escape"
@@ -269,7 +274,6 @@
     }
   },
   "extensions.ignoreRecommendations": true,
-  // Editor settings for better vim integration
   "editor.scrollBeyondLastLine": false,
   "chat.viewSessions.orientation": "stacked",
   "workbench.settings.alwaysShowAdvancedSettings": true,
@@ -281,5 +285,6 @@
   "claudeCode.useTerminal": true,
   "gruvbox-ish.recommendRubyGrammar": false,
   "gruvboxMaterial.darkContrast": "soft",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "workbench.colorTheme": "Gruvbox ish Dark Soft",
 }
