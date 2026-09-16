@@ -170,9 +170,16 @@
         "widget.shadow": "#00000088"
     } */
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  // Disable rainbow bracket colorization (nvim renders brackets as foreground)
+  "editor.bracketPairColorization.enabled": false,
   "editor.fontSize": 18,
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.4,
+  "editor.fontWeight": "400",
+  "workbench.fontAliasing": "antialiased",
+  "editor.letterSpacing": 0,
   "editor.semanticHighlighting.enabled": true,
+  // "editor.fontVariations": "'wght' 450",
   "editor.inlayHints.enabled": "on",
   "terminal.integrated.minimumContrastRatio": 1,
   "window.titleBarStyle": "custom",
@@ -199,7 +206,6 @@
   "editor.definitionLinkOpensInPeek": true,
   "editor.experimentalGpuAcceleration": "off",
   "catppuccin.boldKeywords": false,
-  "editor.fontWeight": "10",
   "csharp.inlayHints.enableInlayHintsForTypes": true,
   "dotnet.inlayHints.enableInlayHintsForParameters": true,
   "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
@@ -275,7 +281,6 @@
   },
   "extensions.ignoreRecommendations": true,
   "editor.scrollBeyondLastLine": false,
-  "chat.viewSessions.orientation": "stacked",
   "workbench.settings.alwaysShowAdvancedSettings": true,
   "workbench.browser.searchEngine": "google",
   "telemetry.feedback.enabled": false,
@@ -284,7 +289,101 @@
   "claudeCode.useCtrlEnterToSend": true,
   "claudeCode.useTerminal": true,
   "gruvbox-ish.recommendRubyGrammar": false,
-  "gruvboxMaterial.darkContrast": "soft",
+  "gruvboxMaterial.darkContrast": "medium",
+  "gruvboxMaterial.colorfulSyntax": true,
+  "gruvboxMaterial.darkPalette": "material",
+  "gruvboxMaterial.darkWorkbench": "material",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "workbench.colorTheme": "Gruvbox ish Dark Soft",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "chat.viewSessions.orientation": "stacked",
+  // Match nvim gruvbox-material syntax colors. nvim shows LSP semantic-token
+  // colors (they override treesitter), so these mirror gruvbox-material's
+  // @lsp.type.* mappings. italics/bold are off in nvim (enable_italic/bold=0),
+  // so plain colors only.
+  "editor.semanticTokenColorCustomizations": {
+    "[Gruvbox Material Dark]": {
+      "enabled": true,
+      "rules": {
+        // Types / modules -> yellow (@lsp.type.type/struct/enum/... -> TSType)
+        "type": "#d8a657",
+        "struct": "#d8a657",
+        "class": "#d8a657",
+        "interface": "#d8a657",
+        "enum": "#d8a657",
+        "union": "#d8a657",
+        "typeAlias": "#d8a657",
+        "typeParameter": "#d8a657",
+        "builtinType": "#d8a657",
+        "namespace": "#d8a657",
+        "selfTypeKeyword": "#d8a657", // `Self`
+        "derive": "#d8a657",          // trait names inside #[derive(...)]
+        // Functions / methods / attributes -> green (@lsp.type.function -> TSFunction)
+        "function": "#a9b665",
+        "method": "#a9b665",
+        "decorator": "#a9b665",
+        "attribute": "#a9b665",       // the `derive` word itself
+        "builtinAttribute": "#a9b665",
+        "macroBang": "#a9b665",       // the `!` (treesitter @function.macro)
+        // Macros -> purple (@lsp.type.macro -> TSConstMacro)
+        "macro": "#d3869b",
+        // Strings -> aqua (@lsp.type.string -> TSString)
+        "string": "#89b482",
+        "formatSpecifier": "#89b482",
+        // Numbers / booleans / self -> purple
+        "number": "#d3869b",
+        "boolean": "#d3869b",
+        "selfKeyword": "#d3869b",     // `self` (treesitter @variable.builtin)
+        // Operators -> orange (@lsp.type.operator -> TSOperator)
+        "operator": "#e78a4e",
+        "arithmetic": "#e78a4e",
+        "bitwise": "#e78a4e",
+        "logical": "#e78a4e",
+        "comparison": "#e78a4e",
+        // Fields / enum members -> blue (@lsp.type.property/enumMember -> TSProperty)
+        "property": "#7daea3",
+        "enumMember": "#7daea3",
+        // Variables / parameters -> foreground (TSVariable / TSParameter)
+        "variable": "#d4be98",
+        "parameter": "#d4be98",
+        "lifetime": "#ea6962",
+        "attributeBracket": "#d4be98",
+        // JS/TS/Go std-library globals -> purple (nvim typemod defaultLibrary)
+        "variable.defaultLibrary": "#d3869b"
+      }
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Gruvbox Material Dark]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "entity.name.type.rust",
+            "storage.type.rust",
+            "storage.type.core.rust",
+            "storage.class.std.rust"
+          ],
+          "settings": { "foreground": "#d8a657" }
+        },
+        {
+          "scope": [
+            "string.quoted.double.rust",
+            "string.quoted.single.rust",
+            "string.rust"
+          ],
+          "settings": { "foreground": "#89b482" }
+        },
+        {
+          "scope": [
+            "entity.name.function.macro.rust",
+            "support.function.macro.rust"
+          ],
+          "settings": { "foreground": "#d3869b" }
+        },
+        {
+          "scope": ["meta.attribute.rust entity.name.function"],
+          "settings": { "foreground": "#a9b665" }
+        }
+      ]
+    }
+  },
 }
