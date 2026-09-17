@@ -257,6 +257,7 @@
   },
   "playwright.reuseBrowser": false,
   "editor.minimap.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "gitlens.advanced.externalDiffTool": "difft",
