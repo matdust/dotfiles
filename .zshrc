@@ -32,6 +32,9 @@ fpath=(/Users/user/.docker/completions $fpath)
 zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+# ember's ANSI color 8 equals the background, so the default fg=8 is invisible;
+# use ember's comment grey instead
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#706c61'
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jeffreytse/zsh-vi-mode
 
