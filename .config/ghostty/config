@@ -1,7 +1,7 @@
 # This is the configuration file for Ghostty.
 
 ## Theme 
-theme = "Gruvbox Material Dark"
+theme = "ember"
 # background = "#2c2c2c"
 
 ## Font
