@@ -6,7 +6,6 @@ return {
 		priority = 1000,
 		opts = {
 			flavour = "mocha",
-			transparent_background = true,
 			float = {
 				transparent = true,
 				solid = true,
@@ -86,9 +85,16 @@ return {
 		end,
 	},
 	{
+		"ember-theme/nvim",
+		name = "ember",
+		lazy = false,
+		priority = 1000,
+		opts = { variant = "ember" }, -- "ember" | "ember-soft" | "ember-light" | "ember-lighter"
+	},
+	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "gruvbox-material",
+			colorscheme = "ember",
 		},
 	},
 }
